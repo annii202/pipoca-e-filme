@@ -30,6 +30,10 @@ p {
     text-align: center !important; 
      
   }
+  #video{
+    width: 600px;
+    height:400px;
+  }
   h1{
     margin-left: 5%;
     text-align: left; 
@@ -111,6 +115,9 @@ p {
     #select-destaque{
       margin-left: 80%;
     }
+    .carousel-item.desativado{
+      display: none;
+    }
     @media screen and (max-width: 500px){
       .lancamento{
         margin: 0px !important;     
@@ -130,7 +137,7 @@ p {
       }
       .destaque-item4{
         display: none;
-      }
+      }     
       .carousel-item.active{  
         margin-left: 0px !important;
         padding-left: 40px !important;
@@ -138,13 +145,19 @@ p {
     }
     
     @media screen and (max-width: 768px) {
-  
+      
       .header{
           top: 0px;
           width: 100%;
           margin: 0%;
           padding: 0%;
         }
+      .lancamento{
+        background-color: #6b2e2e;
+      }
+      .lancamento > .carouselExampleIndicators > a > span{
+        display: none;
+      }
       #cabecalho{
         margin-right: auto;
         margin-left: auto;
@@ -168,11 +181,18 @@ p {
       div.carrousel-description.lancamento{
           display: none;
         }
+        #video{
+          padding-left: 20px;
+          padding-right: 20px;
+          width: 400px;
+          height: 300px;
+        }
+      
         .destaque-item3{
           display: none;
         }
         .destaque-item4{
           display: none;
-        }
+        }  
   
       }
