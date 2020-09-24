@@ -114,6 +114,7 @@ p {
     }
     #select-destaque{
       margin-left: 80%;
+      margin-bottom: 2%;
     }
     .carousel-item.desativado{
       display: none;
@@ -169,13 +170,13 @@ p {
       
       .carousel-item.active.lancamento{        
           margin-top: 20%;
-          display: fixed !important;
+          display: block !important;
         }
       div.carrousel-description.lancamento{
           display: none;
         }
         #video{
-          width: 100% !important;
+          width: 180% !important;
           height: 80%;
         }
       
@@ -185,5 +186,8 @@ p {
         .destaque-item4{
           display: none;
         }  
+        #select-destaque{
+          margin-left: 65%;
+        }
   
       }
