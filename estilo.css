@@ -95,11 +95,11 @@ a {
 .carousel-item.active {
   display: grid;
   grid-template-columns: repeat(2, 1fr 1fr) !important;
-  padding-left: 80px;
+  padding-left: 10%;
 }
 
 .carousel-item.active {
-  margin-left: 50px;
+
 }
 
 .destaque-imagens2, .destaque-imagens3, .destaque-imagens4 {
@@ -132,7 +132,7 @@ a {
   }
   .carousel-item.active.lancamento {
     padding: 0% !important;
-    height: 400px;
+    height: 100vw;
   }
   menu {
     display: none;
@@ -150,8 +150,8 @@ a {
     padding-left: 40px !important;
   }
   #video {
-    width: 100% !important;
-    height: 80%;
+    width: 100vw !important;
+    height: 80vw;
   }
 }
 
@@ -177,7 +177,6 @@ a {
     padding-right: 100%;
   }
   .carousel-item.active.lancamento {
-    margin-top: 20%;
     display: flex !important;
   }
   .carrousel-description.lancamento {
@@ -190,6 +189,11 @@ a {
     display: none;
   }
   #select-destaque {
-    margin-left: 65%;
+    margin-left: 50%;
   }
+  #video {
+    width: 100vw !important;
+    height: 60vw;
+  }
+
 }
