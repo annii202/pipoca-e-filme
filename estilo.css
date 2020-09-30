@@ -1,0 +1,144 @@
+body
+{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #6b2e2e !important;
+  color: white !important;
+}
+ul,
+li,
+p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    background: #e0cecefc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  #lancamento{
+    margin-top: 2%;
+    align-items: center;
+    text-align: center !important; 
+     
+  }
+  h1{
+    margin-left: 5%;
+    text-align: left; 
+
+  }
+  a {
+    text-decoration: none;
+    color: black !important;
+  }
+  .menu {
+    display: flex;
+  }
+  
+  .menu li {
+    margin-left: 10px;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 10px;
+  }
+  
+  #menuToggle {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .header{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+      }
+      .header nav {
+        display: absolute;
+          width: 100%;
+          height: 100%;
+      }
+
+    }
+    .lancamento{
+      background-color:#e0cecefc;
+      border-radius: 2%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      margin: 50px; 
+    
+    }
+    .carousel-item.active.lancamento{
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr 1fr) !important;
+      padding: 20px;
+      margin: 0 auto;
+      animation-name: slide;
+      animation-duration: 5s;
+      color: black !important;  
+    }
+    .carousel-item.active.lancamento > div.carrousel-description.lancamento {
+      margin-left: 50px;
+      margin-top: -30px; 
+      grid-column-start: 2;
+      grid-column-end: 4;     
+    }
+    .em_destaque{
+      margin-left: 20px;
+      padding-left: 30px;
+    }
+    .carousel-item.active{      
+      display: grid;
+      grid-template-columns: repeat(2,1fr 1fr) !important;      
+      padding-left: 160px;
+
+    }
+    .carousel-item.active.destaque-item2{  
+      margin-left: 50px;
+    }
+
+    .destaque-imagens2{  
+      display: none;
+    }
+    .destaque-imagens3{  
+      display: none;
+    }
+    .destaque-imagens4{  
+      display: none;
+    }
+    .destaque-item1{
+      width: 250px;
+      height: 350px;
+    }
+    .destaque-item2{
+      width: 250px;
+      height: 350px;
+    }
+    .destaque-item3{
+      width: 250px;
+      height: 350px;
+    }
+    .destaque-item4{
+      width: 250px;
+      height: 350px;
+    }
+    .destaque-item.custom-select-sm{   
+      padding-left: 11px;
+      padding-right: 1px ;
+    }
+    #select-destaque{
+      margin-top: -10% !important;
+      margin-left: 80%;
+    }
