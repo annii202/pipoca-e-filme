@@ -16,6 +16,7 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .header {
+    margin: 0%;
     background: #e0cecefc;
     display: flex;
     flex-wrap: wrap;
@@ -57,21 +58,7 @@ p {
   .menu-icon {
     display: none;
   }
-  
-  @media screen and (max-width: 768px) {
-
-    .header{
-        position: fixed;
-        top: 0px;
-        width: 100%;
-      }
-      .header nav {
-        display: absolute;
-          width: 100%;
-          height: 100%;
-      }
-
-    }
+   
     .lancamento{
       background-color:#e0cecefc;
       border-radius: 2%;
@@ -86,7 +73,7 @@ p {
       padding: 20px;
       margin: 0 auto;
       animation-name: slide;
-      animation-duration: 5s;
+      animation-duration: 1s;
       color: black !important;  
     }
     .carousel-item.active.lancamento > div.carrousel-description.lancamento {
@@ -102,43 +89,90 @@ p {
     .carousel-item.active{      
       display: grid;
       grid-template-columns: repeat(2,1fr 1fr) !important;      
-      padding-left: 160px;
+      padding-left: 80px;
 
     }
-    .carousel-item.active.destaque-item2{  
+    .carousel-item.active{  
       margin-left: 50px;
     }
 
-    .destaque-imagens2{  
+    .destaque-imagens2, .destaque-imagens3,  .destaque-imagens4{  
       display: none;
     }
-    .destaque-imagens3{  
-      display: none;
-    }
-    .destaque-imagens4{  
-      display: none;
-    }
-    .destaque-item1{
+    .destaque-item1, .destaque-item3, .destaque-item2, .destaque-item4{
       width: 250px;
       height: 350px;
-    }
-    .destaque-item2{
-      width: 250px;
-      height: 350px;
-    }
-    .destaque-item3{
-      width: 250px;
-      height: 350px;
-    }
-    .destaque-item4{
-      width: 250px;
-      height: 350px;
+      margin-left: 20px;
     }
     .destaque-item.custom-select-sm{   
       padding-left: 11px;
       padding-right: 1px ;
     }
     #select-destaque{
-      margin-top: -10% !important;
       margin-left: 80%;
     }
+    @media screen and (max-width: 500px){
+      .lancamento{
+        margin: 0px !important;     
+      }
+      .carousel-item.active.lancamento{
+        padding: 0% !important;
+        width: 200px;
+        height: 400px;
+      }
+      menu{
+        display: none;
+      }
+      .destaque-item1, .destaque-item2, .destaque-item3{
+        padding: 10px;
+        width: 100px;
+        height: 150px;
+      }
+      .destaque-item4{
+        display: none;
+      }
+      .carousel-item.active{  
+        margin-left: 0px !important;
+        padding-left: 40px !important;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+  
+      .header{
+          top: 0px;
+          width: 100%;
+          margin: 0%;
+          padding: 0%;
+        }
+      #cabecalho{
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .header nav {
+          display: absolute;
+            width: 100%;
+            height: 100%;
+        }
+      .menu{
+          display: none;
+        }
+      form{
+          padding-right: 100%;
+        }
+      
+      .carousel-item.active.lancamento{        
+          margin-top: 20%;
+          display: fixed !important;
+        }
+      div.carrousel-description.lancamento{
+          display: none;
+        }
+        .destaque-item3{
+          display: none;
+        }
+        .destaque-item4{
+          display: none;
+        }
+  
+      }
