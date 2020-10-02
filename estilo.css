@@ -13,7 +13,12 @@ ul, li, p {
   list-style: none;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+p{
+  font-size: 1.5vw;
+}
+h2{
+  font-size: 2vw;
+}
 .header {
   margin: 0%;
   background: #e0cecefc;
@@ -25,6 +30,7 @@ ul, li, p {
 }
 
 #lancamento {
+  font-size: 5vw;
   margin-top: 2vw;
   align-items: center;
   text-align: center !important;
@@ -36,6 +42,7 @@ ul, li, p {
 }
 
 h1 {
+  font-size: 50vw;
   margin-left: 5vw;
   text-align: left;
 }
@@ -218,8 +225,7 @@ a {
     color: black;
     display: grid;
     grid-template-rows: 3 !important;
-    padding-right: 10%;
-    padding-left: 5%;
+
   }
   .avaliacao.item1{
     grid-row: 1;
@@ -242,6 +248,22 @@ a {
   }
   .avaliacao.item3>h2{
     font-size: 6vw;
+  }
+  .avaliacao.item1>p{
+    font-size: 4vw;
+  }
+  .avaliacao.item2>p{
+    font-size: 4vw;
+  }
+  .avaliacao.item3>p{
+    font-size: 4vw;
+  }
+  #img_av{
+    height: 10vw;
+    width: 10vw;
+  }
+  #lancamento {
+    font-size: 10vw;
   }
 
 }
