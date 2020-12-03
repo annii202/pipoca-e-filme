@@ -69,6 +69,10 @@ a {
   display: none;
 }
 
+.card-group {
+  width: 30vw !important;
+}
+
 /*lancamento*/
 
 #lancamento {
@@ -327,7 +331,7 @@ a {
   menu {
     display: none;
   }
-  .carousel-item.active {
+  carousel-item.active {
     margin-left: 0px !important;
     padding-left: 40px !important;
   }
