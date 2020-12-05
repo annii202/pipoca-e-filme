@@ -69,9 +69,18 @@ a {
   display: none;
 }
 
+/*cartão*/
+
+#cartao-imagem{
+  width: 20vw;
+}
+.card{
+  width: 30vw;
+}
 #card-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   column-gap: 10px;
   justify-content: space-evenly;
   /* width: 30vw !important; tirei */
@@ -82,7 +91,9 @@ a {
   min-width: 300px !important;
 }
 
-
+.btn.btn-primary{
+  
+}
 /*lancamento*/
 
 #lancamento {
