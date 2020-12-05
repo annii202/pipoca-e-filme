@@ -24,7 +24,7 @@ function PesquisaFilme() {
 
   let xhr = new XMLHttpRequest();
   xhr.onload = MostraFilme;
-  xhr.open('GET', `http://api.themoviedb.org/3/search/movie?query=${querry}&api_key=${APYKEY}`);
+  xhr.open('GET', `https://api.themoviedb.org/3/search/movie?query=${querry}&api_key=${APYKEY}`);
   xhr.send();
 }
 
