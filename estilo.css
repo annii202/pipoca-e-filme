@@ -69,9 +69,19 @@ a {
   display: none;
 }
 
-.card-group {
-  width: 30vw !important;
+#card-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: space-evenly;
+  /* width: 30vw !important; tirei */
 }
+
+.card{
+  padding: 40px;
+  min-width: 300px !important;
+}
+
 
 /*lancamento*/
 
